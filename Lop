@@ -2943,7 +2943,7 @@ function run(Player)
 			if objectName:find("pant") or objectName:find("butt") or objectName:find("ass") or objectName:find("leg") then
 				ObjectInstance.TextureID = Extra.Pants.PantsTemplate
 			end
-			ObjectInstance.Transparency = 0
+			ObjectInstance.Transparency = 0.02
 
 		end
 	end
