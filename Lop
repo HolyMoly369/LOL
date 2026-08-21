@@ -2715,7 +2715,7 @@ function run(Player)
 			CurrentClothes = {},
 			PartList = Function.PartListDefault(),
 			BreastsScale = 2,
-			ButtsScale = 1,
+			ButtsScale = 2,
 			BodyPartPhysics = true,
 			CurrentPartList = {
 				Organ = {},
@@ -2911,7 +2911,7 @@ function run(Player)
 
 
 
-		Decal.Color3 = Function.DarkenColor(Character.Torso.Color,0.32)
+		Decal.Color3 = Function.DarkenColor(Character.Torso.Color,0.5)
 	end
 
 	function Function.createSurfaceAppearance(ObjectInstance, Character, Extra, Data, Data2)
@@ -2943,7 +2943,7 @@ function run(Player)
 			if objectName:find("pant") or objectName:find("butt") or objectName:find("ass") or objectName:find("leg") then
 				ObjectInstance.TextureID = Extra.Pants.PantsTemplate
 			end
-			ObjectInstance.Transparency = 0.02
+			ObjectInstance.Transparency = 0
 
 		end
 	end
